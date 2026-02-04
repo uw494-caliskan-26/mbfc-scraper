@@ -1,0 +1,19 @@
+MBFC Source List (1)
+       ↓
+Source Polling (RSS/Sitemap) (2)
+       ↓
+Article URLs (3)
+
+Political Sources (filter) (4)
+       ↓
+Article Text Extraction (5)
+       ↓
+Dataset (6)
+
+
+The above is the proposed pipeline for getting text, as of now Step 1 is done and I will update this sentence as we finish more. I propose that we avoid third-party aggetators (GroundNews) as they aren't needed.
+The scrapping team should look into individual sites RSS (a standardized XML file that publishes frequently updated content). We should create another script to poll each source to see if an RSS exists and store that result in another spreadsheet.
+
+- Websites differ in where RSS lives, what its name is, so finding RSS is the more complicated task rather than structure of RSS itself: ex: https://foxnews.com/rss or https://nytimes.com/rss
+
+GroundNews was choosing political sources for us, but Stage 4 (which we can decide is earlier too) can be used to filter out sources that aren't political (see comments on main group chat)
